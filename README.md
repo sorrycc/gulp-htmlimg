@@ -1,13 +1,13 @@
-# gulp-cssimg
+# gulp-htmlimg
 
-gulp plugin for handle css background images.
+gulp plugin for handle images for html.
 
 ## Install
 
 ```bash
-$ npm install gulp-cssimg
+$ npm install gulp-htmlimg
 ```
 
 ## Usage
 
-[link](https://github.com/sorrycc/gulp-cssimg/blob/master/test/index.js)
+[link](https://github.com/sorrycc/gulp-htmlimg/blob/master/test/index.js)
