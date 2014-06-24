@@ -7,8 +7,6 @@ var format = require('util').format;
 module.exports = function(fn) {
 
   return through.obj(function(file, enc, callback) {
-    var that = this;
-
     var contents = file.contents.toString();
     var images = getImages(contents);
     fn(images, function(e, urls) {
@@ -18,7 +16,7 @@ module.exports = function(fn) {
 
       var newContent = replaceContent(images, urls, contents);
       file.contents = new Buffer(newContent);
-      that.push(file);
+      callback(null, file);
     });
   });
 };
